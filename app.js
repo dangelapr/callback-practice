@@ -45,3 +45,8 @@ setTimeout( () => {
 //     document.body.style.backgroundColor = 'violet';
 // }, 7000)
 
+const delayedColorChange = (newColor, delay) => {
+    setTimeout(() => {
+        document.body.style.backgroundColor = newColor;
+    }, delay)
+}
