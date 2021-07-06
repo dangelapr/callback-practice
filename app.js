@@ -54,8 +54,8 @@ const delayedColorChange = (newColor, delay, doNext) => {
     setTimeout(() => {
         document.body.style.backgroundColor = newColor;
         doNext && doNext();
-    }, delay)
-}
+    }, delay);
+};
 
 
 delayedColorChange('red', 1000, () => {
@@ -66,10 +66,11 @@ delayedColorChange('red', 1000, () => {
                     delayedColorChange('indigo', 1000, () => {
                         delayedColorChange('violet', 1000, () => {
 
-                        })
-                    })
-                })
-            })
-        })
-    })
-})
+                        });
+                    });
+                });
+            });
+        });
+    });
+});
+
